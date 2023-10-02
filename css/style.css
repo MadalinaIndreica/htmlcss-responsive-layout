@@ -155,11 +155,67 @@ header{
         margin: 10px;
      }
  }
-
  /* /TESTIMONIALS SECTION */
-
-
+ /* BENEFITS  SECTION */
+ #benefits-section{
+    background-color:rgb(151 146 228) ;
+ }
+ .benefits-col{
+    background-color: white;
+    border-radius: 10px;
+    min-height: 275px;
+    text-align: center;
+    margin: 10px;
+ }
+ @media screen and (min-width:768px){
+    .benefits-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+    }
+    .benefits-col{
+        width: calc(90% / 2);
+    }
+ }
+ @media screen and (min-width:992px){
+    .benefits-col {
+        width: calc(90% / 3);
+    }
+ }
+ /* /BENEFITS  SECTION */
+ /* ABOUT US SECTION */
+ .about-us-main-col,
+ .about-us-col {
+    border: 1px solid black;
+    margin: 10px;
+ }
+.about-us-main-col{
+    min-height: 600px;
+}
+.about-us-col{
+    min-height: 300px ;
+}
+@media screen and (min-width:768px){
+    .about-us-row {
+        display: flex;
+    }
+}
+ /* /ABOUT US SECTION */
+ /* CTA SECTION */
+ .cta-section {
+    background-color:rgb(151 146 228);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+ }
+ /* /CTA SECTION */
 /* /MAIN */
 
 /* FOOTER */
+footer {
+    background-color: hsl(0deg 0% 20%);
+    color: white;
+    padding: 2rem; 
+    text-align: center;
+}
 /* /FOOTER */
