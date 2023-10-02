@@ -8,28 +8,31 @@
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;800&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,300;0,900;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- HEADER -->
     <header>
-        <div class="logo">logo</div>
-        <div class="header-icon">
-            <i class="fa-solid fa-bars"></i>
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="header-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav class="header-nav">
+                <ul class="header-links">
+                    <li><a href="">Planning</a></li>
+                    <li><a href="">Testimonials</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">About us</a></li>
+                </ul>
+                <div class="btn white-btn">get started</div>
+
+            </nav>
         </div>
-        <nav class="header-nav">
-            <ul class="header-links">
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-            </ul>
-            <div class="btn white-btn">get started</div>
-
-        </nav>
-
     </header>
     <!-- /HEADER -->
 
@@ -39,22 +42,47 @@
         <section id="five-cards" class="container">
             <div class="main-row">
                 <div class="primary-col">
-                    <h2>Get a Demo application</h2>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis ipsam commodi adipisci tempore, fuga sed vero? Aut, voluptatum et debitis sunt eveniet ab voluptate accusantium amet a soluta obcaecati eum?
-                    <div class="btn">app store</div>
+                    <div class="first-part">
+                        <h2 class="blue-title">Get a Demo application</h2>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis ipsam commodi adipisci tempore, fuga sed vero? Aut, voluptatum et debitis sunt eveniet ab voluptate accusantium amet a soluta obcaecati eum?
+                        <div class="btn blue-btn">
+                            <i class="fa-brands fa-apple"></i>
+                            app store
+                        </div>
+                    </div>
                     <div class="phone-img">
                         <img src="img/phone.png" alt="">
                     </div>
                 </div>
-                <div class="secondary-col">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit debitis a quam architecto eligendi commodi perferendis delectus vitae at magni iste quos, dolorum harum beatae quasi minus ullam totam minima.
+                <div class="secondary-col">
+                    <div class="blue-icon">
+                     <i class="fa-solid fa-file-code"></i>
+                    </div>
+                    <h2 class="blue-title">clean code</h2>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit debitis a quam architecto eligendi commodi perferendis delectus vitae at magni iste quos, dolorum harum beatae quasi minus ullam totam minima.
                 </div>
             </div>
             <div class="secondary-row">
-                <div class="main-cols">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus autem hic molestiae incidunt. Adipisci culpa aspernatur esse vitae explicabo illum atque, sunt consequatur! Debitis sunt ex assumenda facilis necessitatibus illo.
+                <div class="main-cols">
+                     <div class="blue-icon">
+                         <i class="fa-solid fa-compass-drafting"></i>
+                     </div>
+                    <h2 class="blue-title">Web design</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus autem hic molestiae incidunt. Adipisci culpa aspernatur esse vitae explicabo illum atque, sunt consequatur! Debitis sunt ex assumenda facilis necessitatibus illo.
                 </div>
-                <div class="main-cols">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae alias nisi amet unde et possimus ullam similique sapiente cupiditate quibusdam blanditiis, autem, sint temporibus officia voluptatum quo. Necessitatibus, quaerat magnam.
+                <div class="main-cols">
+                    <div class="blue-icon">
+                        <i class="fa-solid fa-laptop-code"></i>
+                   </div>
+                   <h2 class="blue-title">development</h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae alias nisi amet unde et possimus ullam similique sapiente cupiditate quibusdam blanditiis, autem, sint temporibus officia voluptatum quo. Necessitatibus, quaerat magnam.
                 </div>
-                <div class="main-cols">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum perferendis necessitatibus ullam praesentium magni fugiat omnis optio. Reiciendis numquam expedita veritatis minus, aspernatur id labore autem sint ex voluptatibus praesentium?
+                <div class="main-cols">
+                    <div class="blue-icon">
+                        <i class="fa-solid fa-bullhorn"></i>
+                   </div>
+                   <h2 class="blue-title">Branding</h2>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum perferendis necessitatibus ullam praesentium magni fugiat omnis optio. Reiciendis numquam expedita veritatis minus, aspernatur id labore autem sint ex voluptatibus praesentium?
                 </div>
             </div>
             
@@ -63,10 +91,19 @@
         <!-- TWO CARDS SECTION -->
         <section id="two-cards">
             <div class="two-cards-row  container">
-                <div class="col">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, et quae placeat esse molestias eveniet hic, quia error est ipsum nam dicta, doloribus necessitatibus labore sed ad eaque voluptate tempora.
-                </div>
+    
                 <div class="col">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sequi quidem quia? Perspiciatis doloremque ratione recusandae, nisi quae nobis ipsam sed voluptate, at placeat totam nostrum reprehenderit minus. Molestiae, quisquam.
+                    <img src="img/planning1.png" alt="">
+                    <h2>Strategic Planning</h2>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, et quae placeat esse molestias eveniet hic, quia error est ipsum nam dicta, doloribus necessitatibus labore sed ad eaque voluptate tempora.
+                </div>
+                <div class="white-col">
+                    <img src="img/planning2.png" alt="">
+                    <h2>App development</h2>
+                    <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sequi quidem quia? Perspiciatis doloremque ratione recusandae, nisi quae nobis ipsam sed voluptate, at placeat totam nostrum reprehenderit minus. Molestiae, quisquam.</em>
+                    <div class="violet-btn">
+                        &downarrow;
+                    </div>
 
                 </div>
             </div>
@@ -75,14 +112,23 @@
         <!-- TESTIMONIALS SECTION -->
         <section id="testimonial-section">
             <div class="container">
-                <h1>We are commeted expert partners</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta voluptatibus tenetur quis neque libero consectetur dolores sit laudantium</p>
+                <h1 class="violet-title">We are commeted expert partners</h1>
+                <p>We plae huge value on strong relationships and have seen the benefits they bring to our business. customer feedback is vital in helping us to get it right</p>
                 <div class="testimonials-row">
-                    <div class="testimonials-cols">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iste eum facilis fugiat voluptates quisquam odio obcaecati corrupti beatae aperiam, alias repellendus rerum voluptatum similique velit molestiae tempora ratione adipisci.
+                    <div class="testimonials-cols">
+                        <img class="partners-img" src="img/testimonial1.jpg" alt="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iste eum facilis fugiat voluptates quisquam 
+                        <div class="partners-name">NAT RAYNOLDS</div>
                     </div>
-                    <div class="testimonials-cols">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi aut eveniet laboriosam, excepturi praesentium ullam consequuntur itaque libero earum minus ratione cumque doloribus iste? Minus repellendus quia ab aspernatur exercitationem.
+                    <div class="testimonials-cols">
+                        <img class="partners-img" src="img/testimonial2.jpg" alt="">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi aut eveniet laboriosam, excepturi.
+                        <div class="partners-name">CELIA ALMEDA</div>
                     </div>
-                    <div class="testimonials-cols">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet totam aut fugit unde laudantium consectetur commodi adipisci, molestias eaque dolorem porro quidem, vel ullam molestiae asperiores expedita earum excepturi magni!
+                    <div class="testimonials-cols">
+                        <img class="partners-img" src="img/testimonial3.jpg" alt="">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet totam aut fugit unde laudantium consectetur 
+                        <div class="partners-name">BOB ROBERTS</div>
                     </div>
                 </div>
             </div>
@@ -133,7 +179,6 @@
         <!-- /CTA SECTION -->
     </main>
     <!-- /MAIN -->
-
     <!-- FOOTER -->
     <footer>
         <div class="container">
