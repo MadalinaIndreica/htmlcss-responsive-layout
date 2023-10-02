@@ -54,6 +54,92 @@ header{
 /* /HEADER */
 
 /* MAIN */
+    /* FIVE CARDS SECTION */
+#five-cards .main-cols {
+    background-color: rgb(181 221 255);
+    margin: 1rem;
+    padding: 5rem;
+    border-radius: 15px;
+
+}
+.primary-col,
+.secondary-col,
+.main-cols{
+    background-color: rgb(181 221 255);
+    margin: 1rem;
+    padding: 5rem;
+    border-radius: 15px;
+
+}
+.container  {
+
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1000px;
+
+}
+@media screen and (min-width: 320px) {
+    .main-row,
+    .secondary-row {
+        display: block;
+
+    }
+
+}
+@media screen and (min-width:768px) {
+    .main-row,
+    .secondary-row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+  .primary-col{
+    width: 400px;
+  }
+  .secondary-col{
+    width: 220px;
+  }
+  .main-cols {
+    width: calc(95% / 3.5);
+  }
+
+}
+@media screen and (min-width:992px) {
+    .container{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .primary-col{
+        display: flex;
+        justify-content: space-between;
+
+    }
+}
+ /* /FIVE CARDS SECTION */
+
+ /* TWO CARDS  SECTION */
+ #two-cards {
+    background-color: rgb(151 146 228);
+    padding: 2rem;
+ }
+.two-cards-row .col {
+    /* DEBUG */
+    border: 1px solid white;
+    min-height: 400px;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+@media screen and (min-width:992px) {
+    .two-cards-row {
+        display: flex;
+    }
+}
+
+ /* /TWO CARDS  SECTION */
+
+
 /* /MAIN */
 
 /* FOOTER */
