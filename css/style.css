@@ -138,6 +138,25 @@ header{
 }
 
  /* /TWO CARDS  SECTION */
+ /* TESTIMONIALS SECTION */
+ .testimonials-cols {
+    background-color: rgb(151 146 228);
+    border-radius: 10px;
+    min-height: 400px;
+    text-align: center;
+    margin: 10px;
+ }
+ @media screen and (min-width:768px){
+    .testimonials-cols {
+        background-color: rgb(151 146 228);
+        border-radius: 10px;
+        min-height: 200px;
+        text-align: center;
+        margin: 10px;
+     }
+ }
+
+ /* /TESTIMONIALS SECTION */
 
 
 /* /MAIN */
