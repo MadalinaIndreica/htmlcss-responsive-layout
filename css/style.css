@@ -206,12 +206,13 @@ header{
     line-height: 25px;
 }
 .violet-btn {
-    background-color: blueviolet;
-    color: white;
+    background-color:rgb(151 146 228);
+    color: black;
     border-radius: 100%;
     width: 25px;
     position: relative;
     left: 90px;
+    margin-top: 1rem;
 }
 @media screen and (min-width:768px){
    
@@ -226,6 +227,9 @@ header{
     .strategic-title{
         font-size: 50px;
         margin-bottom: 1rem;
+    }
+    .violet-btn{
+        left: 300px;
     }
 }
 @media screen and (min-width:992px) {
@@ -322,7 +326,7 @@ header{
     background-color: rgb(151 146 228);
     color: white;
     border-radius: 20px;
-    width: 40%;
+    width: 60%;
     padding: 0.5rem;
     text-align: center;
     margin-top: 1rem;
@@ -348,22 +352,77 @@ header{
  }
  /* /BENEFITS  SECTION */
  /* ABOUT US SECTION */
- .about-us-main-col,
- .about-us-col {
-    border: 1px solid black;
-    margin: 10px;
- }
+#about-us-section {
+    padding: 5rem 0;
+}
 .about-us-main-col{
     min-height: 600px;
 }
 .about-us-col{
-    min-height: 300px ;
+    text-align: left;
+    
+}
+.about-us-col h4 {
+    color: rgb(151 146 228);
+    font-size: 35px;
+    line-height: 49px;
+    margin-bottom: 4rem;
+}
+.about-us-main-col h2 {
+    color: rgb(151 146 228);
+    font-size: 50px;
+    margin-bottom: 2rem;
+}
+.about-us-main-col {
+   line-height: 45px;
+}
+.about-btn{
+    display: block;
+    background-color: rgb(151 146 228);
+    color: white;
+    border-radius: 20px;
+    width: 70%;
+    padding: 0.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+.fa-linkedin {
+    margin-right: .5rem;
+}
+.about-icon{
+    color: rgb(151 146 228);
+    font-size: 4rem;
+    position: relative;
+    bottom: 204px;
+    right: 50px;
+    text-align: right;
+
 }
 @media screen and (min-width:768px){
     .about-us-row {
         display: flex;
+        justify-content: space-between;
+    }
+    .about-us-main-col{
+        width: 55%;
+    }
+    .about-us-col{
+        width: 40%;
+    }
+    .about-btn{
+        width: 90%;
     }
 }
+.about-img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+
  /* /ABOUT US SECTION */
  /* CTA SECTION */
  .cta-section {
@@ -372,6 +431,27 @@ header{
     text-align: center;
     padding: 1rem;
  }
+ .cta-text {
+    text-align: center;
+ }
+ .cta-section h2 {
+    color: hsl(36.84deg 97.53% 68.24%);
+    font-size: 45px;
+    margin: 1rem 1rem;
+ }
+ .cta-btn{
+    display: inline-block;
+    background-color: white;
+    color: rgb(151 146 228);
+    border-radius: 20px;
+    width: 10rem;
+    padding: 0.5rem;
+    text-align: center;
+    margin: 1rem;
+    text-decoration: none;
+ }
+ 
+ 
  /* /CTA SECTION */
 /* /MAIN */
 
