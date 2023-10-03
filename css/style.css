@@ -87,30 +87,27 @@ header{
     background-color:rgb(4 132 254);
     color:white;
     padding: 0.5rem;
-    width: 10rem;
+    /* width: 10rem; */
     text-align: center;
     margin-top: 1rem;
-    margin-left: 55px;
+    /* margin-left: 55px; */
     
     }
     .blue-icon{
         color: rgb(4 132 254);
         font-size: 100px;
     }
+    section {
+        padding: 2rem 0 ;
+    }
 
     /* FIVE CARDS SECTION */
-#five-cards .main-cols {
-    background-color: rgb(181 221 255);
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 15px;
-
-}
 .primary-col,
 .secondary-col,
 .main-cols{
     background-color: rgb(181 221 255);
-    margin: 1rem;
+    margin-bottom: 10px;
+    margin-left: 9px;
     padding: 2rem;
     border-radius: 15px;
     text-align: center;
@@ -123,45 +120,39 @@ header{
     max-width: 1000px;
 
 }
+.phone-img{
+    position: relative;
+    top: 37px;
+}
+
 @media screen and (min-width: 320px) {
-    .main-row,
-    .secondary-row {
+    .main-row{
         display: block;
 
     }
 
 }
 @media screen and (min-width:768px) {
-    .main-row,
-    .secondary-row{
+    .main-row{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
+        
+    }
+    .primary-col{
+        width: 65%;
+        text-align: left;
+        line-height: 23px;
+    }
+    .main-cols{
+        width: 32%;
+    }
+    .phone-img {
+        width: 60%;
+    }
+    .blue-btn{
+        width:210px ;
 
     }
-  .primary-col{
-    width: 400px;
-    text-align: left;
-  }
-  .secondary-col{
-    width: 220px;
-  }
-  .main-cols {
-    width: calc(95% / 3.5);
-  }
-  .phone-img {
-    width: 70%;
-    position: relative;
-    top: 37px;
-    left: 0px;
-  }
-  .blue-btn{
-    position: relative;
-    top: 15px;
-    left: -55px;
-    width: 205px;
-  }
 
 }
 @media screen and (min-width:992px) {
@@ -173,6 +164,22 @@ header{
         display: flex;
         justify-content: space-between;
 
+    }
+    .main-cols{
+        max-height: 355px;
+        padding-top: .5rem;
+    }
+    .phone-img{
+        width:350%;
+        position: relative;
+        top: 90px;
+    }
+    .blue-icon{
+        font-size: 50px;
+    }
+    .blue-title{
+        font-size: 20px;
+        margin-bottom: .5rem;
     }
 }
  /* /FIVE CARDS SECTION */
@@ -187,41 +194,86 @@ header{
 .two-cards-row .col {
     /* DEBUG */
     min-height: 400px;
-    padding: 2rem;
+    padding: .5rem;
     margin-bottom: 1rem;
+    line-height: 30px;
 }
 .white-col {
     background-color: white;
     color: black;
     border-radius: 15px;
     padding: 1rem;
+    line-height: 25px;
 }
 .violet-btn {
     background-color: blueviolet;
     color: white;
     border-radius: 100%;
     width: 25px;
+    position: relative;
+    left: 90px;
+}
+@media screen and (min-width:768px){
+   
+    .two-cards-row .col {
+        line-height: 40px;
+        text-align: left;
+    }
+    .white-col{
+        line: height 40px; ;
+
+    }
+    .strategic-title{
+        font-size: 50px;
+        margin-bottom: 1rem;
+    }
 }
 @media screen and (min-width:992px) {
     .two-cards-row {
         display: flex;
+        align-items: flex-end;
     }
+    .white-col{
+        width: 110%;
+    }
+    .man-img {
+        width: 65%;
+    }
+    .violet-btn{
+        left: 45%;
+    }
+    .strategic-title{
+        font-size: 30px;
+        margin-bottom: 2rem;
+    }
+    
 }
 
  /* /TWO CARDS  SECTION */
  /* TESTIMONIALS SECTION */
  .violet-title {
     color:rgb(151 146 228);
+    padding-bottom: 2rem;
  }
  .testimonials-cols {
     background-color: rgb(151 146 228);
     border-radius: 10px;
-    min-height: 400px;
     text-align: center;
     margin: 10px;
+    color: white;
+    line-height: 40px;
+    padding: 2rem;
+ }
+ .testimonial-heading{
+    text-align: center;
+    line-height: 30px;
+    padding-bottom: 2rem;
  }
  .partners-img {
-    border-radius: 100%;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
  }
  @media screen and (min-width:768px){
     .testimonials-cols {
@@ -230,19 +282,51 @@ header{
         min-height: 200px;
         text-align: center;
         margin: 10px;
+        display: flex;
+        align-items: center;
      }
+     .partners-img{
+        margin-right: 2rem;
+     }
+     
  }
  /* /TESTIMONIALS SECTION */
  /* BENEFITS  SECTION */
  #benefits-section{
     background-color:rgb(151 146 228) ;
+    text-align: center;
+ }
+ .benefits-title{
+    color: white;
+    font-size: 25px;
+    padding: 2rem;
  }
  .benefits-col{
     background-color: white;
     border-radius: 10px;
     min-height: 275px;
-    text-align: center;
+    text-align: left;
     margin: 10px;
+    padding: 2rem;
+ }
+ .benefits-col-title{
+    color: rgb(151 146 228);
+    padding-bottom: 1.5rem;
+    
+ }
+ .violet-nr{
+    font-size: 65px;
+ }
+ .benefits-btn{
+    display: block;
+    background-color: rgb(151 146 228);
+    color: white;
+    border-radius: 20px;
+    width: 40%;
+    padding: 0.5rem;
+    text-align: center;
+    margin-top: 1rem;
+
  }
  @media screen and (min-width:768px){
     .benefits-row {
@@ -252,6 +336,9 @@ header{
     }
     .benefits-col{
         width: calc(90% / 2);
+    }
+    .benefits-title{
+        font-size: 35px;
     }
  }
  @media screen and (min-width:992px){
